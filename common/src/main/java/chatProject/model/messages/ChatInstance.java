@@ -31,6 +31,8 @@ public class ChatInstance<T> {
         this.users = users;
     }
 
+
+
     /**
      * Gets the list of chatrooms in the chat.
      * @return the list of {@link Chatroom} in the model
@@ -92,7 +94,8 @@ public class ChatInstance<T> {
      * @return the new chat instance
      */
     public static <T> ChatInstance<T> initEmptyChat() {
-        return new ChatInstance<T>(null, null);
+
+        return new ChatInstance<T>(new ArrayList<>(), null);
     }
 
 }

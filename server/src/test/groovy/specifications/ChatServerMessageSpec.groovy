@@ -15,6 +15,8 @@ class ChatServerMessageSpec extends Specification {
         and: "A chatroom"
         int chatroomId = server.addChatroom(null, null)
 
+
+
         when: "A new message is created in the Chatroom"
         server.addMessage(chatroomId, null, "Test message")
 
